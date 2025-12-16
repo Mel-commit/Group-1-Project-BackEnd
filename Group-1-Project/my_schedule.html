@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Schedule - Course Enrollment Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Course Enrollment Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Available Courses</a></li>
+                <li><a href="my_schedule.html" class="active">My Schedule</a></li>
+                <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>My Enrolled Courses</h2>
+        <div class="course-list">
+            <!-- Placeholder Course 1 -->
+            <div class="course-item">
+                <h3>SDEV 255: Web Development</h3>
+                <p><strong>Description:</strong> An introduction to modern web development technologies...</p>
+                <br><p><span id="course1Toggle" onclick="toggleCourseDetails('course1Details', 'course1Toggle')">Show More</span></p>
+                <div id="course1Details" class="course-details" style="display: none;">
+                    <p>including HTML5, CSS3, JavaScript, and various frameworks.</p>
+                    <p><strong>Subject Area:</strong> Software Development</p>
+                    <p><strong>Credits:</strong> 3</p>
+                    <p><strong>Instructor:</strong> Dr. Jane Doe</p>
+                    <p><strong>Schedule:</strong> Mon/Wed 10:00 AM - 11:15 AM</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <h3>SDEV 153: Python Programming</h3>
+                <p><strong>Description:</strong> Fundamentals of programming using the Python language...</p>
+                <br><p><span id="course2Toggle" onclick="toggleCourseDetails('course2Details', 'course2Toggle')">Show More</span></p>
+                <div id="course2Details" class="course-details" style="display: none;">
+                    <p>covering data structures, algorithms, and object-oriented concepts.</p>
+                    <p><strong>Subject Area:</strong> Software Development</p>
+                    <p><strong>Credits:</strong> 3</p>
+                    <p><strong>Instructor:</strong> Prof. John Smith</p>
+                    <p><strong>Schedule:</strong> Tue/Thu 1:00 PM - 2:15 PM</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <h3>CSCI 101: Intro to Computer Science</h3>
+                <p><strong>Description:</strong> A broad overview of the core concepts in computer science...</p>
+                <br><p><span id="course3Toggle" onclick="toggleCourseDetails('course3Details', 'course3Toggle')">Show More</span></p>
+                <div id="course3Details" class="course-details" style="display: none;">
+                    <p>including computational thinking, problem-solving, and basic programming principles.</p>
+                    <p><strong>Subject Area:</strong> Computer Science</p>
+                    <p><strong>Credits:</strong> 4</p>
+                    <p><strong>Instructor:</strong> Dr. Alice Johnson</p>
+                    <p><strong>Schedule:</strong> Mon/Wed/Fri 9:00 AM - 9:50 AM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Group 1 Project. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+
+        function toggleCourseDetails(id, toggleId) {
+            const element = document.getElementById(id);
+            const toggleElement = document.getElementById(toggleId);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+                toggleElement.textContent = "Show Less";
+            } else {
+                element.style.display = "none";
+                toggleElement.textContent = "Show More";
+            }
+        }
+    </script>
+</body>
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> 26e52694a092429af5fe47270dfeaa6f37f859cb

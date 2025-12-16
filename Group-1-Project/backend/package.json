@@ -1,0 +1,20 @@
+{
+    "backend":{
+        "server": "server.js",
+        "routes": {
+            "auth": "auth.js",
+            "enrollment": "enrollment.js",
+            "schedule": "schedule.js"
+        },
+        "data": "store.js"
+    },
+
+    "public":{
+        "main": "index.html",
+        "login": "login.html",
+        "signup":"signup.html",
+        "schedule": "my_schedule.html",
+        "style": "styles.css"
+
+    }
+}
